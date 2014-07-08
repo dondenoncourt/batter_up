@@ -18,7 +18,6 @@
 class Batting < ActiveRecord::Base
   belongs_to :player
 
-  #Batting.where(player_id: 'volqued01').each {|b| puts "year #{b.year} slugging: #{b.slugging_percent}"}
   def slugging_percent
     return 0 if at_bats == 0
     begin
