@@ -36,3 +36,6 @@ populate an Sqlite database from CSV files.
 8. Review sample statistics
 
         rake list_sample_statistics
+
+9. Flesh out a baseball statistics web app using the existing domains
+
