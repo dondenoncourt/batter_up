@@ -1,7 +1,8 @@
 ## Welcome to Batter Up
 
 This is a sample Rails application that demonstrates how to create and
-populate an Sqlite database from CSV files. 
+populate an Sqlite database from CSV files. It was built with Ruby 2.0 and Rails
+4.1.
 
 ## Getting Started
 
@@ -25,11 +26,13 @@ populate an Sqlite database from CSV files.
 
         rake db:migrate
 
-6. Populate the Players database from the csv (in db/csv)
+6. Populate the Players database from the csv (in db/csv) (this may
+take a few minutes...)
 
         rake populate_players_from_csv
 
-7. Populate the Battings database from the csv (in db/csv)
+7. Populate the Battings database from the csv (in db/csv) (this may
+take a few minutes...)
 
         rake populate_battings_from_csv
 
