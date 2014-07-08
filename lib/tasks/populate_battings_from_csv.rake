@@ -4,12 +4,16 @@ task :populate_battings_from_csv => :environment do
         :year,
         :league,
         :team_id,
+        :grounders, # g
         :at_bats,
+        :runs, #r
         :hits,
         :doubles,
         :triples,
         :home_runs,
-        :runs_batted_in
+        :runs_batted_in,
+        :stolen_bases, # sb,
+        :cs, #cs
         ]
   BAT_MAP = Hash[BAT_COL.map.with_index.to_a]
 

@@ -18,12 +18,16 @@ ActiveRecord::Schema.define(version: 20140708015359) do
     t.integer "year"
     t.string  "league"
     t.string  "team_id"
+    t.integer "grounders"
     t.integer "at_bats"
+    t.integer "runs"
     t.integer "hits"
     t.integer "doubles"
     t.integer "triples"
     t.integer "home_runs"
     t.integer "runs_batted_in"
+    t.integer "stolen_bases"
+    t.integer "cs"
   end
 
   create_table "players", id: false, force: true do |t|

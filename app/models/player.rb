@@ -16,9 +16,16 @@
 
 class Player < ActiveRecord::Base
   self.primary_key = :player_id
-  has_many :batting
+  has_many :battings
 
   def name
     "#{first} #{last}"
+  end
+
+  def years_batting_average(year)
+    at_bats = battings.where(year: year).sum(:at_bats)
+    hits = battings.where(year: year).sum(:hits)
+    return nil if at_bats == 0
+    hits / at_bats.to_f
   end
 end

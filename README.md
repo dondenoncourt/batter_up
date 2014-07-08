@@ -25,7 +25,6 @@ populate an Sqlite database from CSV files.
 
         rake db:migrate
 
-
 6. Populate the Players database from the csv (in db/csv)
 
         rake populate_players_from_csv
@@ -33,3 +32,7 @@ populate an Sqlite database from CSV files.
 7. Populate the Battings database from the csv (in db/csv)
 
         rake populate_battings_from_csv
+
+8. Review sample statistics
+
+        rake list_sample_statistics
