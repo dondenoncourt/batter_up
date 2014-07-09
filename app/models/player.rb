@@ -40,7 +40,7 @@ class Player < ActiveRecord::Base
 
   # highest batting average	AND	the most home runs AND the most RBI in their league
   def self.player_of_the_year(year, league)
-    runs_batted_in_league_winner = Batting.where(year: year, league: league).where("at_bats >= 400").order(:runs_batted_in).last.player
+    runs_batted_in_league_winner = Batting.where(year: year, league: league).where("at_bats >= 400").order(:runs_batted_in).last.try(:player)
     home_runs_league_winner = Batting.where(year: year, league: league).where("at_bats >= 400").order(:home_runs).last.player
     batting_averages = {}
     Batting.where(year: year, league: league).where("at_bats >= 400").each {|b| batting_averages[b.player_id] = b.batting_average}

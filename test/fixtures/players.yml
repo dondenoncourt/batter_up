@@ -1,0 +1,41 @@
+player01:
+  player_id: player01
+  birth_year: 1934
+  first: Player
+  last: One
+
+player02:
+  player_id: player02
+  birth_year: 1944
+  first: Player
+  last: Two
+
+player03:
+  player_id: player03
+  birth_year: 1944
+  first: Player
+  last: Three
+
+player04:
+  player_id: player04
+  birth_year: 1954
+  first: Player
+  last: Four
+
+player05:
+  player_id: player05
+  birth_year: 1964
+  first: Player
+  last: Five
+
+player06:
+  player_id: player06
+  birth_year: 1964
+  first: Player
+  last: Six
+
+player07:
+  player_id: player07
+  birth_year: 1964
+  first: Player
+  last: Seven
