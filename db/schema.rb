@@ -13,6 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20140708015359) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+  enable_extension "hstore"
+
   create_table "battings", force: true do |t|
     t.string  "player_id"
     t.integer "year"
@@ -37,6 +41,6 @@ ActiveRecord::Schema.define(version: 20140708015359) do
     t.string  "last"
   end
 
-  add_index "players", ["player_id"], name: "index_players_on_player_id", unique: true
+  add_index "players", ["player_id"], name: "index_players_on_player_id", unique: true, using: :btree
 
 end
